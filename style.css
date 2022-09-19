@@ -5485,7 +5485,7 @@ button.btn-control {
     transition-timing-function: cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
 }
 .search-popup{
-	width: 100%;
+	width: 50%;
 }
 .search-active .search-popup{
 	transform: translateY(0%);
@@ -5647,7 +5647,7 @@ button.btn-control {
       left: 0;
       width: 100%;
       height: 100%;
-      background: #171B2A url(assets/images/Cars/campbell-3ZUsNJhi_Ik-unsplash.jpg) no-repeat center;
+      background: #171B2A url(assets/images/logo-black-circle.png) no-repeat center;
       z-index: 1000;
 }
 #loader {

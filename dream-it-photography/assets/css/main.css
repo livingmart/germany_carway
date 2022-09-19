@@ -944,7 +944,7 @@ a#scrollUp {
     bottom: 30px;
     width: 45px;
     height: 44px;
-    background-color: #193eef;
+    /* background-color: #193eef; */
     text-align: center;
     line-height: 45px;
     color: #ffffff;
