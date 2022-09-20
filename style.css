@@ -2,9 +2,13 @@
 --<	dreamit Header Top Section Css -->
 ======================================================*/
 .mobile-menu {
-    background: #D00A2B;
+    background: rgb(8, 8, 17);
     padding: 0 35px 0 10px;
     display: none;
+    /* border: 3px solid green; */
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
 }
 /* scrollup */
 #scrollUp {
