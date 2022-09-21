@@ -1,6 +1,121 @@
-let language = {
-	ar: {
-		appTitle: "Car way",
+// const herotexti = document.querySelector(".herotexti");
+// const herotextii = document.querySelector(".herotextii");
+
+const langEl = document.querySelector(".langWrap");
+const link = document.querySelectorAll("a");
+const aboutustitle = document.querySelector(".aboutustitle");
+const aboutusdesc = document.querySelector(".aboutusdesc");
+const whatweoffertitle = document.querySelector(".whatweoffertitle");
+const howitwork = document.querySelector(".howitwork");
+const requestcartitle = document.querySelector(".requestcartitle");
+const requestcardesc = document.querySelector(".requestcardesc");
+const wefindyourcartitle = document.querySelector(".wefindyourcartitle");
+const wefindyourcardesc = document.querySelector(".wefindyourcardesc");
+const wecontactsellertitle = document.querySelector(".wecontactsellertitle");
+const wecontactsellerdesc = document.querySelector(".wecontactsellerdesc");
+const paymenttitle = document.querySelector(".paymenttitle");
+const paymentdesc = document.querySelector(".paymentdesc");
+const weshipcartitle = document.querySelector(".weshipcartitle");
+const weshipcardesc = document.querySelector(".weshipcardesc");
+const menuaboutus = document.querySelector(".menuaboutus");
+const menuwhatweoffer = document.querySelector(".menuwhatweoffer");
+const menuhowitworks = document.querySelector(".menuhowitworks");
+const menuportfolio = document.querySelector(".menuportfolio");
+const menurequestcar = document.querySelector(".menurequestcar");
+const impressum = document.querySelector(".impressum");
+const searchingtitle = document.querySelector(".searchingtitle");
+const searchingdesc = document.querySelector(".searchingdesc");
+const operationtitle = document.querySelector(".operationtitle");
+const operationdesc = document.querySelector(".operationdesc");
+const logisticstitle = document.querySelector(".logisticstitle");
+const logisticssdesc = document.querySelector(".logisticssdesc");
+
+link.forEach((el) => {
+	el.addEventListener("click", () => {
+		langEl.querySelector(".actv").classList.remove("actv");
+		el.classList.add("actv");
+
+		const attr = el.getAttribute("language");
+
+		aboutustitle.textContent = data[attr].aboutustitle;
+		aboutusdesc.textContent = data[attr].aboutusdesc;
+		whatweoffertitle.textContent = data[attr].whatweoffertitle;
+		howitwork.textContent = data[attr].howitwork;
+		requestcartitle.textContent = data[attr].requestcartitle;
+		requestcardesc.textContent = data[attr].requestcardesc;
+		wefindyourcartitle.textContent = data[attr].wefindyourcartitle;
+		wefindyourcardesc.textContent = data[attr].wefindyourcardesc;
+		wecontactsellertitle.textContent = data[attr].wecontactsellertitle;
+		wecontactsellerdesc.textContent = data[attr].wecontactsellerdesc;
+		paymenttitle.textContent = data[attr].paymenttitle;
+		paymentdesc.textContent = data[attr].paymentdesc;
+		weshipcartitle.textContent = data[attr].weshipcartitle;
+		weshipcardesc.textContent = data[attr].weshipcardesc;
+		menuaboutus.textContent = data[attr].menuaboutus;
+		menuwhatweoffer.textContent = data[attr].menuwhatweoffer;
+		menuhowitworks.textContent = data[attr].menuhowitworks;
+		menuportfolio.textContent = data[attr].menuportfolio;
+		menurequestcar.textContent = data[attr].menurequestcar;
+		impressum.textContent = data[attr].impressum;
+		searchingtitle.textContent = data[attr].searchingtitle;
+		searchingdesc.textContent = data[attr].searchingdesc;
+		operationtitle.textContent = data[attr].operationtitle;
+		operationdesc.textContent = data[attr].operationdesc;
+		logisticstitle.textContent = data[attr].logisticstitle;
+		logisticssdesc.textContent = data[attr].logisticssdesc;
+		// herotexti.textContent = data[attr].herotexti;		
+		// herotextii.textContent = data[attr].herotext1;
+
+	});
+});
+
+var data = {
+	english: {
+		herotexti: "GET YOUR DREAM CAR FROM GERMANY NOW!",
+		herotextii: "DREAM CAR",
+		herotextiii: "FROM GERMANY NOW!",
+		herotext1:
+			"we are specialized in bringing your dreams to fruiton with no stress and affordable prices",
+		aboutustitle: "About Us",
+		aboutusdesc:
+			"We are Carway one of the oldest car maintenance firm in Germany, and nown we are launching a new service where you can get your new, legacy, and modern German car. We provide all professionals who will help you get your favorite car with the most effective value of cash, o middle man, no hidden fees, no complications, no have to come to Germany and at the identical price because the German 	Market, if not better! We work as a mediation service to match between you and also the seller therefore any deal or contract is going to be eventually with the vendor directly. And particularly, we offer our service from the time we receive your request until you get the car passing together with your country taxation and every paperwork necessary to end the mission",
+		whatweoffertitle: "What Do We Offer!",
+		searchingtitle: "Searching",
+		searchingdesc:
+			"We connect with our suppliers and contacts to find the best deal on the car you need. We will then send you several options and offers to choose from",
+		operationtitle: "Operation",
+		operationdesc:
+			"After the agreement on a car we finish all paperwork with the seller, arrange the payment, and take care of all documents with the German authorities",
+		logisticstitle: "Logistic and Customs",
+		logisticssdesc:
+			"Making the car ready for shipment, and taking care of the taxation on the destination country to avoid any unforeseen problems",
+		howitwork: "How it works",
+		requestcartitle: "Request your car",
+		requestcardesc:
+			"Fill the car request form on our website with all necessary information about your needs and make sure all information are valid such as email, phone number etc",
+		wefindyourcartitle: "We find your car",
+		wefindyourcardesc:
+			"We start our scouting and contact our partners to find you the best car that matches your request",
+		wecontactsellertitle: "We contact the seller",
+		wecontactsellerdesc:
+			"We get in touch with the seller to close the deal; we will send you the contract to sign it directly with the seller",
+		paymenttitle: "Payment",
+		paymentdesc:
+			"You will transfer the full money amount to the seller account directly; we will supervise the process thoroughly with full transparency and eventually get our commission",
+		weshipcartitle: "We ship the car",
+		weshipcardesc:
+			"We will arrange the shipment to the nearest seaport or airport from you with the best insurance services",
+		menuaboutus: "About us",
+		menuwhatweoffer: "What Do We Offer!",
+		menuhowitworks: "How it works",
+		menuportfolio: "Portfolio",
+		menurequestcar: "Request Your Car",
+		impressum: "Impressum",
+	},
+
+	arabic: {
+		herotexti: "احصل على سيارة أحلامك من ألمانيا الآن!",
+		herotextii: "نحن متخصصون في تحقيق أحلامك دون ضغوط وبأسعار معقولة",
 		aboutustitle: "من نحن",
 		aboutusdesc:
 			"نحن كارواى اقدم شركه صيانه سيارات فى المانيا ونحنن بصدد انشاء خدمه جديده لشراء افخم و احدث السيارات الالمانيه من خلال متخصصين ونحن بدورنا سنعمل على ايجاد السيارة لك في السوق الألماني وبأفضل سعر يمكنك الحصول عليه, بدون وسيط, بدون بنود دفع مخفية وبدون تعقيدات البيروقراطية الألمانية وطبعا بدون الحاجة للقدوم إلى ألمانيا ( إلا لو كنت تريد حقا ان تشرفنا بزيارتك ) وطبعا بنفس أسعار السوق الألماني إن لم تكن أفضل! نحن نعمل كخدمة وساطة للتوفيق بينك وبين البائع ، وبالتالي فإن أي صفقة أو عقد سوف يكون في نهاية المطاف مع البائع مباشرة. بالإضافة لكل ذلك, سنقوم بمرافقتك من حين إستلام طلبك للسيارة وحتى إستلامك للسيارة في بلدك , مرورا بالخدمات الجمركية وجميع المعاملات الضرورية لأيصال الخدمة الأفضل لك",
@@ -37,45 +152,3 @@ let language = {
 		menurequestcar: "اطلب سيارتك",
 	},
 };
-
-if (window.location.hash) {
-	if (location.hash.substring(1) === "eng") {
-		// remove all hash tags and reload page to default text
-		window.location.href = window.location.toString().split(/\?|#/)[0];
-	} else if (location.hash.substring(1) === "ar") {
-		document.title = language.ar.appTitle;
-		$("[data-language=aboutustitle]").text(language.ar.aboutustitle);
-		$("[data-language=aboutusdesc]").text(language.ar.aboutusdesc);		
-	}
-}
-
-$("[data-callLang]").on("click", function () {
-	if ($(this).attr("data-callLang") === "eng") {
-		window.location.href = window.location.toString().split(/\?|#/)[0];
-		return false;
-	}
-	window.location.hash = $(this).attr("data-callLang");
-	location.reload(true);
-});
-
-// Go back to top button
-// let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function () {
-// 	scrollFunction();
-// };
-
-// function scrollFunction() {
-// 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-// 		mybutton.style.display = "block";
-// 	} else {
-// 		mybutton.style.display = "none";
-// 	}
-// }
-
-// When the user clicks on the button, scroll to the top of the document
-// function topFunction() {
-// 	document.body.scrollTop = 0;
-// 	document.documentElement.scrollTop = 0;
-// }
