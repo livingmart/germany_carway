@@ -75,7 +75,7 @@ var data = {
 		herotextii: "DREAM CAR",
 		herotextiii: "FROM GERMANY NOW!",
 		herotext1:
-			"we are specialized in bringing your dreams to fruiton with no stress and affordable prices",
+			" At Carway we are specialized in bringing your dreams to fruiton with no stress and affordable prices",
 		aboutustitle: "About Us",
 		aboutusdesc:
 			"We are Carway one of the oldest car maintenance firm in Germany, and nown we are launching a new service where you can get your new, legacy, and modern German car. We provide all professionals who will help you get your favorite car with the most effective value of cash, o middle man, no hidden fees, no complications, no have to come to Germany and at the identical price because the German 	Market, if not better! We work as a mediation service to match between you and also the seller therefore any deal or contract is going to be eventually with the vendor directly. And particularly, we offer our service from the time we receive your request until you get the car passing together with your country taxation and every paperwork necessary to end the mission",

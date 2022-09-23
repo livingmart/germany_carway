@@ -66,8 +66,8 @@
 	<div class="col-lg-12 col-md-4 right-side lang"
 		style=" width: 25%; position: fixed; z-index: 9999; width: 100px; line-height: 2;">
 		<ul class="langWrap">
-			<a language='arabic' class="" style="color: #fff;">ARABIC</a>
-			<a language='english' class="actv" style="color: #fff;">ENGLISH</a>
+			<a onclick="" href="javascript:void(0)" data-callLang="eng" class="actv" style="color: #fff;">ENGLISH</a>
+			<a onclick="" href="javascript:void(0)" data-callLang="ar" style="color: #fff;">عربى</a>
 			<a href="Impressum.html" style="color: #fff;">Impressum </a>
 		</ul>
 	</div>
@@ -86,6 +86,38 @@
 			</div>
 		</div>
 	</div>
+	<!--==================================================-->
+	<!-- Start Search Popup Area -->
+	<!--==================================================-->
+	<div class="search-popup">
+		<button class="close-search style-two"><i class="fas fa-times"></i></button>
+		<nav
+			style="color: #fff; background: rgba(0, 0, 0, 0.149); font-size: 30px; line-height: 4; margin-top:50px; margin-left: 20px;">
+			<ul>
+				<a style="color: #4C9702;" href="#about-section">
+					<li data-callLang="menuaboutus">About us</li>
+				</a>
+				<a style="color: #4C9702;" href="#What-do-we-offer">
+					<li data-language="menuwhatweoffer">What Do We Offer!</li>
+				</a>
+				<a style="color: #4C9702;" href="#how-it-works">
+					<li data-language="menuhowitworks">How it works?</li>
+				</a>
+				<a style="color: #4C9702;" href="#portfolio">
+					<li data-language="menuportfolio">Portfolio</li>
+				</a>
+				<a style="color: #4C9702;" href="#request-car">
+					<li data-language="menurequestcar">Request Your Car</li>
+				</a>
+				<a style="color: #4C9702;" href="Impressum.html">
+					<li data-language="impressum">Impressum</li>
+				</a>
+			</ul>
+		</nav>
+	</div>
+	<!--==================================================-->
+	<!-- End Search Popup Area -->
+	<!--==================================================-->
 
 	<!-- Mobile-Menu -->
 	<div class="mobile-menu" style="margin-top: 20px; background: rgb(17, 17, 36);">
@@ -145,13 +177,16 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12">
 					<div class="slider-content">
-						<h2 class="wow slideInLeft herotexti" data-wow-duration="2s" data-wow-delay=".5s">
-							GET YOUR <span style="color: #4C9702;">DREAM CAR</span> FROM GERMANY NOW!</h2>
+						<h2 class="wow slideInLeft herotexti" data-wow-duration="2s" data-wow-delay=".5s"
+							data-language="getyour">
+							GET YOUR <span style="color: #4C9702;" data-language="dreamcar">DREAM CAR</span
+								data-language="fromgermany"> FROM GERMANY NOW!</h2>
 						<!-- <h2 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay=".5s"></h2> -->
-						<h5 class="herotextii wow slideInLeft" data-wow-duration="2s" data-wow-delay=".5s"
-							style="text-transform: none; font-size: 25px; line-height: 2.5rem; letter-spacing: 3px; width: 90%; margin-top: 20px;">
+						<h3 class="wow slideInLeft atcarway" data-wow-duration="2s" data-wow-delay=".5s"
+							data-language="hero" key="hero"
+							Style=" color: #fff; text-transform: none; line-height: 2.5rem; letter-spacing: 3px; width: 90%; margin-top: 20px;">
 							At CARWAY, we are specialized in bringing your dreams to fruiton with no stress and
-							affordable prices.</h5>
+							affordable prices.</h3>
 						<!-- <div class="slider-circle-thumb rotateme">
 							<img src="assets/images/shape3.png" alt="">
 						</div> -->
@@ -176,9 +211,10 @@
 				<div class="col-lg-6 col-md-6">
 					<div class="section-title">
 						<!-- <h5>// ABOUT COMPAny</h5> -->
-						<h1 class="aboutustitle">About Us</h1>
+						<h1 class="aboutustitle" data-language="aboutustitle">About Us</h1>
 						<!-- <h2>It Specialties</h2> -->
-						<p class="aboutusdesc">We are Carway one of the oldest car maintenance firm in Germany,
+						<p class="aboutusdesc" data-language="aboutusdesc">We are Carway one of the oldest car
+							maintenance firm in Germany,
 							and now we are launching a
 							new service where you can get your new, legacy, and modern German car. We provide all
 							professionals who will help you get your favorite car with the most effective value of cash,
@@ -203,7 +239,7 @@
 				<div class="col-lg-12 col-md-12">
 					<div class="section-title text-center">
 						<!-- <h5>// WHAT WE Do</h5> -->
-						<h1 class="whatweoffertitle">What Do We Offer!</h1>
+						<h1 data-language="whatweoffertitle">What Do We Offer!</h1>
 					</div>
 				</div>
 			</div>
@@ -213,11 +249,12 @@
 						<div class="case_list owl-carousel">
 							<div class="single-case-study">
 								<div class="case-thumb">
-									<img src="assets/images/cars/offer-search.jpg" alt="">
+									<img src="assets/images/Cars/offer-search.jpg" alt="">
 									<div class="case-content">
-										<h2 class="searchingtitle">Searching</h2>
+										<h2 data-language="searchingtitle">Searching</h2>
 										<!-- <h6>Cloud Computing</h6> -->
-										<p class="searchingdesc">We connect with our suppliers and contacts to
+										<p data-language="searchingdesc">We connect with our
+											suppliers and contacts to
 											find the best deal on the car
 											you need. We will then send you several
 											options and offers to choose from</p>
@@ -229,9 +266,10 @@
 								<div class="case-thumb">
 									<img src="assets/images/Cars/offer-operation.jpg" alt="">
 									<div class="case-content">
-										<h2 class="operationtitle">Operation</h2>
+										<h2 data-language="operationtitle">Operation</h2>
 										<!-- <h6>Cloud Computing</h6> -->
-										<p class="operationdesc">After the agreement on a car we finish all
+										<p data-language="operationdesc">After the agreement on a
+											car we finish all
 											paperwork with the seller, arrange
 											the payment, and take care of all
 											documents with the German authorities.</p>
@@ -243,8 +281,10 @@
 								<div class="case-thumb">
 									<img src="assets/images/Cars/offer-logistics.jpg" alt="">
 									<div class="case-content">
-										<h2 class="logisticstitle">Logistic and Customs</h2>
-										<p class="logisticssdesc">Making the car ready for shipment, and taking
+										<h2 data-language="logisticstitle">Logistic and Customs
+										</h2>
+										<p data-language="logisticssdesc">Making the car ready
+											for shipment, and taking
 											care of the taxation on the
 											destination country to avoid any unforeseen
 											problems</p>
@@ -270,7 +310,7 @@
 			<div class="col-lg-12 col-md-12">
 				<div class="section-title text-center">
 					<!-- <h5>// WHAT WE Do</h5> -->
-					<h1 class="howitwork">How it works?</h1>
+					<h1 data-language="howitwork">How it works?</h1>
 				</div>
 			</div>
 		</div>
@@ -287,8 +327,8 @@
 							<!-- <span>01</span> -->
 						</div>
 						<div class="feature-content">
-							<h2 class="requestcartitle">Request your car</h2>
-							<p class="requestcardesc">Fill the car request form on our website with all
+							<h2 data-language="requestcartitle">Request your car</h2>
+							<p data-language="requestcardesc">Fill the car request form on our website with all
 								necessary information about your needs
 								and make sure all information are valid such as email, phone number etc..</p>
 						</div>
@@ -303,8 +343,8 @@
 							<!-- <span>02</span> -->
 						</div>
 						<div class="feature-content">
-							<h2 class="wefindyourcartitle">We find your car</h2>
-							<p class="wefindyourcardesc">We start our scouting and contact our partners to find
+							<h2 data-language="wefindyourcartitle">We find your car</h2>
+							<p data-language="wefindyourcardesc">We start our scouting and contact our partners to find
 								you the best car that matches your
 								request.</p>
 						</div>
@@ -319,8 +359,8 @@
 							<!-- <span>03</span> -->
 						</div>
 						<div class="feature-content">
-							<h2 class="wecontactsellertitle">We contact the seller</h2>
-							<p class="wecontactsellerdesc">We get in touch with the seller to close the deal; we
+							<h2 data-language="wecontactsellertitle">We contact the seller</h2>
+							<p data-language="wecontactsellerdesc">We get in touch with the seller to close the deal; we
 								will send you the contract to sign
 								it directly with the seller.</p>
 						</div>
@@ -335,8 +375,8 @@
 							<!-- <span>04</span> -->
 						</div>
 						<div class="feature-content">
-							<h2 class="paymenttitle">Payment</h2>
-							<p class="paymentdesc">You will transfer the full money amount to the seller account
+							<h2 data-language="paymenttitle">Payment</h2>
+							<p data-language="paymentdesc">You will transfer the full money amount to the seller account
 								directly; we will supervise
 								the process thoroughly with
 								full transparency and eventually get our commission.</p>
@@ -352,8 +392,8 @@
 							<!-- <span>05</span> -->
 						</div>
 						<div class="feature-content">
-							<h2 class="weshipcartitle">We ship the car</h2>
-							<p class="weshipcardesc">We will arrange the shipment to the nearest seaport or
+							<h2 data-language="weshipcartitle">We ship the car</h2>
+							<p data-language="weshipcardesc">We will arrange the shipment to the nearest seaport or
 								airport from you with the best
 								insurance services.</p>
 						</div>
@@ -638,7 +678,7 @@
 				<div class="col-lg-4 col-md-6">
 					<div class="section-title text-left">
 						<!-- <h5>// CONTACT US</h5> -->
-						<h1 style="font-size: 35px;">Request Your Car</h1>
+						<h1 data-language="requestyourcar" style="font-size: 35px;">Request Your Car</h1>
 						<!-- <h4>For more information</h4> -->
 					</div>
 					<div class="contact-box d-flex">
@@ -646,8 +686,8 @@
 							<i class="flaticon-address"></i>
 						</div>
 						<div class="contact-content">
-							<h2>Head Office:</h2>
-							<p>Carway Mietwerkstatt Am Gewerbehof 34 50170 Kerpen.</p>
+							<h2 data-language="headoffice">Head Office:</h2>
+							<p data-language="officeaddress">Carway Mietwerkstatt Am Gewerbehof 34 50170 Kerpen.</p>
 						</div>
 					</div>
 					<div class="contact-box d-flex">
@@ -655,7 +695,7 @@
 							<i class="flaticon-phone-call"></i>
 						</div>
 						<div class="contact-content">
-							<h2>Email Address:</h2>
+							<h2 data-language="emailaddress">Email Address:</h2>
 							<p>info@carway.com</p>
 						</div>
 					</div>
@@ -668,8 +708,8 @@
 									<div class="col-lg-6 col-md-6">
 										<div class="contact-form">
 											<form action="post">
-												<input class="contact-style" type="text" name="name"
-													placeholder="Email*" required>
+												<input data-language="email" class="contact-style" type="text"
+													name="name" placeholder="Email*  (البريد الالكتروني)*" required>
 												<i class="fas fa-user"></i>
 											</form>
 										</div>
@@ -677,8 +717,8 @@
 									<div class="col-lg-6 col-md-6">
 										<div class="contact-form">
 											<form action="post">
-												<input class="contact-style" type="text" name="name"
-													placeholder="Full name*" required>
+												<input data-language="fullname" class="contact-style" type="text"
+													name="name" placeholder="Full name*  (الاسم)*" required>
 												<i class="fas fa-user"></i>
 											</form>
 										</div>
@@ -686,7 +726,7 @@
 
 									<div class="col-lg-6 col-md-6">
 										<select class="select-option dropdown" id="country" name="country">
-											<option>Choose a Country</option>
+											<option data-language="choosecountry">Choose a Country</option>
 											<option value="AF">Afghanistan</option>
 											<option value="AX">Aland Islands</option>
 											<option value="AL">Albania</option>
@@ -944,14 +984,15 @@
 									<div class="col-lg-6 col-md-6">
 										<div class="contact-form">
 											<form action="post">
-												<input class="contact-style" type="text" name="name"
-													placeholder="Phone e.g +44 000 000 00" required>
+												<input data-language="phone" class="contact-style" type="text"
+													name="name" placeholder="Phone*  (هاتف)*" required>
 											</form>
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6">
 										<select class="select-option">
-											<option class="form-option-contact" value="shab">Choose a car brand</option>
+											<option class="form-option-contact" value="shab"
+												data-language="choosecarbrand">Choose a car brand</option>
 											<option class="form-option-contact" value="English">Audi</option>
 											<option class="form-option-contact" value="English">BMW</option>
 											<option class="form-option-contact" value="English">Mercedes</option>
@@ -963,13 +1004,14 @@
 										<div class="contact-form">
 											<form action="post">
 												<input class="contact-style" type="text" name="name"
-													placeholder="Car model" required>
+													placeholder="Car model*  (موديل السياره )*" required>
 											</form>
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-6">
 										<select class="select-option">
-											<option class="form-option-contact" value="">Choose fuel type</option>
+											<option class="form-option-contact" value="" data-language="choosefuel">
+												Choose fuel type</option>
 											<option class="form-option-contact" value="">Gasoline</option>
 											<option class="form-option-contact" value="">Diesel</option>
 											<option class="form-option-contact" value="">Hybrid/Gasoline</option>
@@ -980,7 +1022,8 @@
 
 									<div class="col-lg-6 col-md-6">
 										<select class="select-option">
-											<option class="form-option-contact" value="">Choose gear type</option>
+											<option class="form-option-contact" value="" data-language="choosegear">
+												Choose gear type</option>
 											<option class="form-option-contact" value="">Automatic</option>
 											<option class="form-option-contact" value="">Half Automatic</option>
 											<option class="form-option-contact" value="">Manual</option>
@@ -988,7 +1031,8 @@
 									</div>
 									<div class="col-lg-6 col-md-6">
 										<select class="select-option">
-											<option class="form-option-contact" value="">Choose a production year
+											<option class="form-option-contact" value="" data-language="chooseyear">
+												Choose a production year
 											</option>
 											<option class="form-option-contact" value="">2022</option>
 											<option class="form-option-contact" value="">2021</option>
@@ -1009,7 +1053,8 @@
 									</div>
 									<div class="col-lg-6 col-md-6">
 										<select class="select-option">
-											<option class="form-option-contact" value="">Choose a car type</option>
+											<option class="form-option-contact" value="" data-language="choosecartype">
+												Choose a car type</option>
 											<option class="form-option-contact" value="">Small Car</option>
 											<option class="form-option-contact" value="">Cabrio</option>
 											<option class="form-option-contact" value="">Coupe</option>
@@ -1025,7 +1070,7 @@
 										<div class="contact-form-msg">
 											<form action="post">
 												<textarea name="text" class="contact-style-msg" name="message" id="text"
-													placeholder="Please provide us with more information about your car; such as model no, type, color e.t.c"
+													placeholder="Please provide us with more information about your car; such as model no, type, color e.t.c*  (زودنا بمعلومات اكتر عن نوع السياره الشكل و اللون)* "
 													cols="30" rows="10"></textarea>
 												<i class="fas fa-comment"></i>
 											</form>
@@ -1033,7 +1078,7 @@
 									</div>
 									<div class="col-lg-12">
 										<div class="contact-button text-right">
-											<input class="button" type="submit" value="Send request"><i
+											<input class="button" type="submit" value="Send request (ارسل طلب)"><i
 												class="fas fa-arrow-right"></i>
 										</div>
 									</div>
@@ -1058,10 +1103,10 @@
 								width="100px" alt="">
 						</a>
 						<div class="footer-social">
-							<a class="facebook"><i class="fa fa-facebook"></i></a>
-							<a class="twitter"><i class="fa fa-twitter"></i></a>
-							<a class="youtube"><i class="fa fa-youtube"></i></a>
-							<a class="pinterest"><i class="fa fa-pinterest"></i></a>
+							<a class="facebook" href="https://www.facebook.com/profile.php?id=100086125177781"
+								target="_blank"><i class="fa fa-facebook"></i></a>
+							<a class="twitter" href="https://www.instagram.com/carway_auto/" target="_blank"><i
+									class="fa fa-instagram"></i></a>
 						</div>
 						<!-- <div class="col-lg-12 col-md-4 right-side" style="margin-top: 2rem;  margin-bottom: -2rem;">
 							<div class="option-form-thumb">
@@ -1081,7 +1126,7 @@
 	<!--/Footer Area-->
 
 	<div class="copyright">
-		<p>Copyright &copy; Carway, 2022 All Rights Reserved.</p>
+		<p data-language="copyright">Copyright &copy; Carway, 2022 All Rights Reserved.</p>
 	</div>
 	<!-- <div class="footer-bottom">
 		<div class="container">
@@ -1102,38 +1147,6 @@
 			</div>
 		</div>
 	</div> -->
-	<!--==================================================-->
-	<!-- Start Search Popup Area -->
-	<!--==================================================-->
-	<div class="search-popup">
-		<button class="close-search style-two"><i class="fas fa-times"></i></button>
-		<nav
-			style="color: #fff; background: rgba(0, 0, 0, 0.149); font-size: 30px; line-height: 4; margin-top:50px; margin-left: 20px;">
-			<ul>
-				<a style="color: #4C9702;" href="#about-section">
-					<li class="menuaboutus">About us</li>
-				</a>
-				<a style="color: #4C9702;" href="#What-do-we-offer">
-					<li class="menuwhatweoffer">What Do We Offer!</li>
-				</a>
-				<a style="color: #4C9702;" href="#how-it-works">
-					<li class="menuhowitworks">How it works?</li>
-				</a>
-				<a style="color: #4C9702;" href="#portfolio">
-					<li class="menuportfolio">Portfolio</li>
-				</a>
-				<a style="color: #4C9702;" href="#request-car">
-					<li class="menurequestcar">Request Your Car</li>
-				</a>
-				<a style="color: #4C9702;" href="Impressum.html">
-					<li class="impressum">Impressum</li>
-				</a>
-			</ul>
-		</nav>
-	</div>
-	<!--==================================================-->
-	<!-- End Search Popup Area -->
-	<!--==================================================-->
 
 	<!-- jquery js -->
 	<script src="assets/js/vendor/jquery-3.2.1.min.js"></script>
@@ -1170,10 +1183,15 @@
 	<script src="assets/js/jquery.meanmenu.js"></script>
 	<script src="assets/js/jquery.nav.js"></script>
 	<script src="assets/js/jquery.scrollUp.js"></script>
+
+	<script src="assets/js/jquery.min.js"></script>
+
+	<script src="/jquery.lang.js"></script>
+
 	<!-- theme js -->
 	<script src="assets/js/theme.js"></script>
 
-	<script src="/index-lang.js"></script>
+	<!-- <script src="/index-lang.js"></script> -->
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="/dream-it-photography/assets/js/jquery-3.2.1.min.js"></script>
@@ -1193,6 +1211,7 @@
 	<script src="/dream-it-photography/assets/js/scrollUp.min.js"></script>
 
 	<script src="/dream-it-photography/assets/js/script.js"></script>
+
 
 
 </body>
