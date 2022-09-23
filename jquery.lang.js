@@ -70,7 +70,7 @@ if (window.location.hash) {
 		$("[data-language=operationdesc]").text(language.ar.operationdesc);
 		$("[data-language=logisticstitle]").text(language.ar.logisticstitle);
 		$("[data-language=logisticssdesc]").text(language.ar.logisticssdesc);
-		// how it work section 
+		// how it work section
 		$("[data-language=howitwork]").text(language.ar.howitwork);
 		$("[data-language=requestcartitle]").text(language.ar.requestcartitle);
 		$("[data-language=requestcardesc]").text(language.ar.requestcardesc);
@@ -88,9 +88,9 @@ if (window.location.hash) {
 		$("[data-language=paymentdesc]").text(language.ar.paymentdesc);
 		$("[data-language=weshipcartitle]").text(language.ar.weshipcartitle);
 		$("[data-language=weshipcardesc]").text(language.ar.weshipcardesc);
-		// portfolio section 
+		// portfolio section
 		$("[data-language=portfoliotitle]").text(language.ar.portfoliotitle);
-		// request your car section 		
+		// request your car section
 		$("[data-language=requestyourcar]").text(language.ar.requestyourcar);
 		$("[data-language=headoffice]").text(language.ar.headoffice);
 		$("[data-language=emailaddress]").text(language.ar.emailaddress);
@@ -103,8 +103,8 @@ if (window.location.hash) {
 		$("[data-language=choosecartype]").text(language.ar.choosecartype);
 		// copyright
 		$("[data-language=copyright]").text(language.ar.copyright);
-		
-		// nav menu section 
+
+		// nav menu section
 		$("[data-language=menuaboutus]").text(language.ar.menuaboutus);
 		$("[data-language=menuwhatweoffer]").text(language.ar.menuwhatweoffer);
 		$("[data-language=menuhowitworks]").text(language.ar.menuhowitworks);
@@ -121,4 +121,10 @@ $("[data-callLang]").on("click", function () {
 
 	window.location.hash = $(this).attr("data-callLang");
 	location.reload(true);
+});
+
+// nav menu toggle
+$(".menu-btn").click(function () {
+	$(this).toggleClass("fas fa-times");
+	$(".menunav").toggleClass("active");
 });

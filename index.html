@@ -48,6 +48,7 @@
 	<link rel="stylesheet" href="/dream-it-photography/assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/dream-it-photography/assets/css/circle.css">
 	<link rel="stylesheet" href="/dream-it-photography/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
 </head>
 
@@ -72,14 +73,15 @@
 		</ul>
 	</div>
 
-	<div id="sticky-header" class="dreamit_nav_manu" style="background: rgba(39, 39, 75, 0.093); border:none;">
+	<div id="sticky-header" class="dreamit_nav_manu" style="background: rgba(39, 39, 75, 0.093);">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-9">
 					<nav class="dreamit_menu text-center">
 						<div class="search-box-btn search-box-outer" style="margin-right: -460px;">
 							<!-- <i class="flaticon-search"></i> -->
-							<div class="nav-btn navSidebar-button"><span><i class="fas fa-align-left"></i></span></div>
+							<!-- nav-btn navSidebar-button  fas fa-align-left-->
+							<div class="menu-btn"><span><i class="fas fa-bars"></i></span></div>
 						</div>
 					</nav>
 				</div>
@@ -89,13 +91,13 @@
 	<!--==================================================-->
 	<!-- Start Search Popup Area -->
 	<!--==================================================-->
-	<div class="search-popup">
+	<!-- search-popup -->
+	<div class="navmenu">
 		<button class="close-search style-two"><i class="fas fa-times"></i></button>
-		<nav
-			style="color: #fff; background: rgba(0, 0, 0, 0.149); font-size: 30px; line-height: 4; margin-top:50px; margin-left: 20px;">
-			<ul>
+		<nav class="menunav" style="color: #fff; ">
+			<ul>				
 				<a style="color: #4C9702;" href="#about-section">
-					<li data-callLang="menuaboutus">About us</li>
+					<li data-language="menuaboutus">About us</li>
 				</a>
 				<a style="color: #4C9702;" href="#What-do-we-offer">
 					<li data-language="menuwhatweoffer">What Do We Offer!</li>
@@ -120,7 +122,7 @@
 	<!--==================================================-->
 
 	<!-- Mobile-Menu -->
-	<div class="mobile-menu" style="margin-top: 20px; background: rgb(17, 17, 36);">
+	<div class="mobile-menu" style=" background: rgb(17, 17, 36);">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-3">
@@ -231,77 +233,91 @@
 		</div>
 	</div>
 
-	<!-- Start - Service- Section -->
+	<!-- ============================================================== -->
+	<!-- Start - Blog- Section -->
 	<!-- ============================================================= -->
-	<div class="service-section" id="What-do-we-offer">
+	<div class="bolg-section service-section" id="What-do-we-offer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 col-md-12">
 					<div class="section-title text-center">
-						<!-- <h5>// WHAT WE Do</h5> -->
 						<h1 data-language="whatweoffertitle">What Do We Offer!</h1>
+						<!-- <h2>Leatest Blogs</h2> -->
 					</div>
 				</div>
 			</div>
-			<div class="case-study-section">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="case_list owl-carousel">
-							<div class="single-case-study">
-								<div class="case-thumb">
-									<img src="assets/images/Cars/offer-search.jpg" alt="">
-									<div class="case-content">
-										<h2 data-language="searchingtitle">Searching</h2>
-										<!-- <h6>Cloud Computing</h6> -->
-										<p data-language="searchingdesc">We connect with our
-											suppliers and contacts to
-											find the best deal on the car
-											you need. We will then send you several
-											options and offers to choose from</p>
-										<!-- <a href="case-study-details.html"><span>+</span></a> -->
-									</div>
-								</div>
-							</div>
-							<div class="single-case-study">
-								<div class="case-thumb">
-									<img src="assets/images/Cars/offer-operation.jpg" alt="">
-									<div class="case-content">
-										<h2 data-language="operationtitle">Operation</h2>
-										<!-- <h6>Cloud Computing</h6> -->
-										<p data-language="operationdesc">After the agreement on a
-											car we finish all
-											paperwork with the seller, arrange
-											the payment, and take care of all
-											documents with the German authorities.</p>
-										<!-- <a href="case-study-details.html"><span>+</span></a> -->
-									</div>
-								</div>
-							</div>
-							<div class="single-case-study">
-								<div class="case-thumb">
-									<img src="assets/images/Cars/offer-logistics.jpg" alt="">
-									<div class="case-content">
-										<h2 data-language="logisticstitle">Logistic and Customs
-										</h2>
-										<p data-language="logisticssdesc">Making the car ready
-											for shipment, and taking
-											care of the taxation on the
-											destination country to avoid any unforeseen
-											problems</p>
-										<!-- <h6 the car ready for shipment, and taking care of the taxation on the destination country to avoid any unforeseen problems 6>Cloud Computing</h6> -->
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-itmes">
+						<div class="blog-thumb">
+							<img src="/assets/images/Cars/offer-search.jpg" alt="">
+						</div>
+						<div class="blog-content">
 
-										<!-- <a href="case-study-details.html"><span>+</span></a> -->
-									</div>
-								</div>
+							<div class="blog-title">
+								<h2><a data-language="searchingtitle">Searching</a></h2>
 							</div>
+							<div class="blog-text">
+								<p data-language="searchingdesc">We connect with our
+									suppliers and contacts to
+									find the best deal on the car
+									you need. We will then send you several
+									options and offers to choose from.
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-itmes">
+						<div class="blog-thumb">
+							<img src="/assets/images/Cars/offer-operation.jpg" alt="">
+						</div>
+						<div class="blog-content">
+
+							<div class="blog-title">
+								<h2><a data-language="operationtitle">Operation</a></h2>
+							</div>
+							<div class="blog-text">
+								<p data-language="operationdesc">After the agreement on a
+									car we finish all
+									paperwork with the seller, arrange
+									the payment, and take care of all
+									documents with the German authorities.
+								</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="blog-itmes">
+						<div class="blog-thumb">
+							<img src="/assets/images/Cars/offer-logistics.jpg" alt="">
+						</div>
+						<div class="blog-content">
+
+							<div class="blog-title">
+								<h2><a data-language="logisticstitle">Logistic and Customs</a></h2>
+							</div>
+							<div class="blog-text">
+								<p data-language="logisticssdesc">Making the car ready
+									for shipment, and taking
+									care of the taxation on the
+									destination country to avoid any unforeseen
+									problems
+								</p>
+							</div>
+
 						</div>
 					</div>
 				</div>
 			</div>
-
 		</div>
-
 	</div>
+
+
 	<!-- ============================================================== -->
 	<!-- Start - call-Do-Action- Section -->
 	<!-- ============================================================= -->
